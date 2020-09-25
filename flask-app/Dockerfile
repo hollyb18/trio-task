@@ -5,7 +5,7 @@ FROM python:3.7
 # Copy contents into image
 COPY . . 
 # run pip dependencies
-RUN pip install Flask flask_sqlalchemy 
+RUN pip install Flask flask_sqlalchemy pymysql[rsa] 
 # Expose correct port
 EXPOSE 5000
 # Create an entrypoint
