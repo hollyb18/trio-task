@@ -3,12 +3,12 @@ pipeline {
 	stages {
 		stage ('BUILD IMAGES'){
 			steps {
-				sh './build.sh'
+				sh "./build.sh"
 			}
 		}
 		stage ('RUN CONTAINERS'){
 			steps {
-				sh './run.sh'
+				sh "./run.sh"
 			}
 		}
 	}
