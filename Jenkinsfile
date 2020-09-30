@@ -1,9 +1,10 @@
 pipeline {
 	agent any
 	stages {
-		stage ('BUILD IMAGES'){
+		stage ('BUILD IMAGES AND PUSH TO NEXUS'){
 			steps {
 				sh "./build.sh"
+				sh "./push.sh"
 			}
 		}
 		stage ('RUN CONTAINERS'){
